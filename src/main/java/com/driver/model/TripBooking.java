@@ -13,7 +13,7 @@ public class TripBooking{
     private String toLocation;
     private int distanceInKm;
     @Enumerated(EnumType.STRING)
-    private TripStatus tripStatus;
+    private TripStatus status;
 
     private int bill;
 
@@ -32,7 +32,7 @@ public class TripBooking{
         this.fromLocation = fromLocation;
         this.toLocation = toLocation;
         this.distanceInKm = distanceInKm;
-        this.tripStatus = tripStatus;
+        this.status= tripStatus;
         this.bill = bill;
         this.driver = driver;
         this.customer = customer;
@@ -71,11 +71,11 @@ public class TripBooking{
     }
 
     public TripStatus getTripStatus() {
-        return tripStatus;
+        return status;
     }
 
     public void setTripStatus(TripStatus tripStatus) {
-        this.tripStatus = tripStatus;
+        this.status = tripStatus;
     }
 
     public int getBill() {
